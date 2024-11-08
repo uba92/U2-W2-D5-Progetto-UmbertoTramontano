@@ -13,17 +13,13 @@ for (let i = 0; i < thumbnails.length; i++) {
   })
 }
 
-const saveBtn = document.getElementById('saveBtn')
-console.log(saveBtn)
-saveBtn.addEventListener('click', () => {
-  window.location.href = './homepage.html'
-})
-const langSelected = document.getElementById('langDrop')
-const languages = document.querySelectorAll('#langList li')
-console.log(languages)
+const genresBtn = document.getElementById('genresBtn')
+const genres = document.querySelectorAll('#genresList li a')
+console.log(genresBtn)
+console.log(genres)
 
-for (let i = 0; i < languages.length; i++) {
-  languages[i].addEventListener('click', () => {
-    langSelected.innerText = languages[i].innerText
+for (let i = 0; genres.length; i++) {
+  genres[i].addEventListener('click', () => {
+    genresBtn.innerText = genres[i].innerText
   })
 }
