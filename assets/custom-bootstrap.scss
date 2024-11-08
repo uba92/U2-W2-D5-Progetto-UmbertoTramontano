@@ -1,0 +1,18 @@
+@import './scss/functions';
+@import './scss/variables';
+
+$new-primary: #141414;
+$new-secondary: #000000;
+$new-light: #ffffff;
+$new-dark: #808080;
+
+$new-theme-colors: (
+    'primary': $new-primary,
+    'secondary': $new-secondary,
+    'light': $new-light,
+    'dark': $new-dark,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+@import './scss/bootstrap.scss';
