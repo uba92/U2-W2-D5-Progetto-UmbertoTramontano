@@ -12,3 +12,9 @@ for (let i = 0; i < thumbnails.length; i++) {
     thumbnails[i].style.transform = 'scale(1.0)'
   })
 }
+
+const saveBtn = document.getElementById('saveBtn')
+console.log(saveBtn)
+saveBtn.addEventListener('click', () => {
+  window.location.href = './homepage.html'
+})

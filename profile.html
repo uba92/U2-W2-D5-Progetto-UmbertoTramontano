@@ -45,14 +45,16 @@
                       <p class="text-dark">Language:</p>
                       <div class="dropdown">
                         <button
+                          id="langDrop"
                           class="btn btn-outline-secondary dropdown-toggle text-white"
                           type="button"
                           data-bs-toggle="dropdown"
                           aria-expanded="false"
                         >
-                          English
+                          ---
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" id="langList">
+                          <li><a class="dropdown-item" href="#">English</a></li>
                           <li><a class="dropdown-item" href="#">Italian</a></li>
                           <li>
                             <a class="dropdown-item" href="#">Frence</a>
@@ -133,6 +135,7 @@
               <div class="row g-2">
                 <div class="col col-12 col-lg-2">
                   <button
+                    id="saveBtn"
                     type="button"
                     class="btn btn-outline-secondary w-100 rounded-0 border-dark text-dark"
                   >
@@ -167,5 +170,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
